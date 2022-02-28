@@ -1,0 +1,9 @@
+name: 'GitHub Pull Request task list checker.'
+description: 'To check pull request task list is all completed or not.'
+author: 'Keita Kitamura <keita@sumally.com>'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'check-square'
+  color: 'gray-dark'
