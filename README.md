@@ -1,7 +1,7 @@
 # How to use
 
 ```yaml
-name: pr-tasklist-checker
+name: pr-task-list-checker
 
 on:
   pull_request:
@@ -10,9 +10,9 @@ on:
       - edited
 
 jobs:
-  tasklist-checker:
+  pr-task-list-checker:
     runs-on: ubuntu-latest
     steps:
-      - uses: sumally/github-check-tasklist-action
+      - uses: sumally/github-check-tasklist-action@v1.0.0
 
 ```
