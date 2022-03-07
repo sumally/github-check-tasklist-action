@@ -3,7 +3,7 @@ description: 'To check pull request task list is all completed or not.'
 author: 'Keita Kitamura <keita@sumally.com>'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://ghcr.io/sumally/github-check-tasklist-action:1.0.1'
 branding:
   icon: 'check-square'
   color: 'gray-dark'
