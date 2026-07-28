@@ -1,5 +1,5 @@
 NAME = github-check-tasklist-action
-TAG = 1.0.1
+TAG = 1.1.0
 
 .PHONY: build
 build:
