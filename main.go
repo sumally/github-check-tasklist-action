@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/google/go-github/v42/github"
+	"github.com/google/go-github/v85/github"
 	"github.com/sethvargo/go-githubactions"
 )
 
@@ -11,6 +11,7 @@ func main() {
 	eventName := os.Getenv("GITHUB_EVENT_NAME")
 	eventPath := os.Getenv("GITHUB_EVENT_PATH")
 
+	//nolint:gosec // the path is supplied by the Actions runner via GITHUB_EVENT_PATH
 	eventPayload, err := os.ReadFile(eventPath)
 	if err != nil {
 		githubactions.Fatalf("failed to load event payload from %s: %s", eventPath, err)

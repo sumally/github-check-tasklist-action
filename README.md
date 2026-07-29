@@ -13,6 +13,6 @@ jobs:
   pr-task-list-checker:
     runs-on: ubuntu-latest
     steps:
-      - uses: sumally/github-check-tasklist-action@v1.0.0
+      - uses: sumally/github-check-tasklist-action@v1.1.0
 
 ```
